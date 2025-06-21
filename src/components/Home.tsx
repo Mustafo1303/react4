@@ -17,6 +17,15 @@ import Pic2 from '../assets/Mask group-2.png'
 import Pic3 from '../assets/Mask group.png'
 import Vec1 from '../assets/Vector.png'
 import vec2 from '../assets/fi-rr-time-fast.png'
+import face from '../assets/Vector (1).png'
+import yout from '../assets/🦆 icon _youtube_.png'
+import insta from '../assets/🦆 icon _instagram_.png'
+import twitter from '../assets/Vector.png'
+
+
+
+
+
 const Home = () => {
   return (
     <div>
@@ -129,7 +138,8 @@ const Home = () => {
           <img className='flex justify-center items-center m-9' src={Vec1} alt="" />
         <h1 className="w-[123px] h-[29px] absolute left-[58px] font-inter font-bold text-[24px] leading-[100%] tracking-[0%] text-center uppercase text-[#5FE26C]">Online Ordering</h1>
         <p className="w-[236px] h-[72px] absolute top-[186px] left-[31p] font-inter font-semibold text-[20px] leading-[100%] tracking-[0%] text-center text-[#90BD95]">Explore menu & order with ease using our Online Ordering</p>
-        </li>
+        </li>-
+        
         <li className="w-[277px] h-[297px] absolute top-[4276px] left-[981px] rounded-[30px] shadow-[7px_12px_43px_0px_#00000024]">
           <img className='flex justify-center items-center m-9' src={vec2} alt="" />
         <h1 className="w-[123px] h-[29px] absolute left-[58px] font-inter font-bold text-[24px] leading-[100%] tracking-[0%] text-center uppercase text-[#5FE26C]">Gift Cards</h1>
@@ -141,13 +151,11 @@ const Home = () => {
       <footer className="bg-white py-10 px-4 w-full absolute top-[4700px] text-[34px] leading-[100%] tracking-[0px] font-inter">
   <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm text-[#333]">
 
-    {/* Logo va slogan */}
     <div>
       <img src={Img} alt="Logo" className="w-[70px] h-auto mb-4" />
       <p className="text-gray-600">Savor the artistry where every dish is a culinary masterpiece</p>
     </div>
 
-    {/* Useful links */}
     <div>
       <h3 className="font-semibold text-black mb-4">Useful links</h3>
       <ul className="space-y-2">
@@ -159,7 +167,6 @@ const Home = () => {
       </ul>
     </div>
 
-    {/* Main Menu */}
     <div>
       <h3 className="font-semibold text-black mb-4">Main Menu</h3>
       <ul className="space-y-2">
@@ -171,7 +178,6 @@ const Home = () => {
       </ul>
     </div>
 
-    {/* Contact Us */}
     <div>
       <h3 className="font-semibold text-black mb-4">Contact Us</h3>
       <ul className="space-y-2">
@@ -184,9 +190,16 @@ const Home = () => {
     </div>
 
   </div>
-</footer>
-
-
+   <ul className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4  justify-items-center mb-6">
+    <li><img src={twitter} alt="Twitter" className="w-6 h-6" /></li>
+    <li><img src={insta} alt="Instagram" className="w-6 h-6" /></li>
+    <li><img src={yout} alt="YouTube" className="w-6 h-6" /></li>
+    <li><img src={face} alt="Facebook" className="w-6 h-6" /></li>
+  </ul>
+  <p className="text-[#555555] text-[22px] font-medium font-inter">
+    Copyright 2023 Dscode | All rights reserved 
+  </p>
+ </footer>
     </div>
   );
 };
